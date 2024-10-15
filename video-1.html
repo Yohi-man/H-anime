@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - Quintessential quinteplets</title>
+    <link rel="stylesheet" href="video.css">
+  </head>
+<body>
+  <header class="header">
+    <div class="logo">h!anime</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search anime...">
+      <button>Filter</button>
+    </div>
+    <div class="nav-links">
+      <a href="watch-link.html">Watch2gether</a>
+      <a href="home.html">Random</a>
+      <a href="search.html">Anime Name</a>
+      <!-- <a href="#">Community</a> -->
+
+    </div>
+    <button class="login-btn">Login</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content-watch">
+    <!-- Episode List -->
+    <section class="episode-list">
+      <h2>List of episodes:</h2>
+      <input type="text" placeholder="Number of Ep">
+      <ul>
+        <li class="active-episode"><a href="video-1.html" style="text-decoration: none; color: inherit;">Episode 1 <button class="play-btn">▶</button></a></li>
+        <li class="active-episode"><a href="video.html" style="text-decoration: none; color: inherit;">Episode 2 <button class="play-btn">▶</button></a></li>
+        <li class="active-episode"><a href="video-1.html" style="text-decoration: none; color: inherit;">Episode 1 <button class="play-btn">▶</button></a></li>
+        <li class="active-episode"><a href="video-1.html" style="text-decoration: none; color: inherit;">Episode 1 <button class="play-btn">▶</button></a></li>
+        <li class="active-episode"><a href="video-1.html" style="text-decoration: none; color: inherit;">Episode 1 <button class="play-btn">▶</button></a></li>
+        <!-- Add more episodes -->
+      </ul>
+    </section>
+
+  <!--video player-->
+  <section class="video-player-section">
+    <div class="video-player"> 
+      <!-- Placeholder for video player -->
+        <video id="animeVideo" width="100%" height="auto" controls>
+            <source src="video.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+        </video>
+        </div>
+        <!-- Custom Controls (just as an example) -->
+        <div class="video-controls">
+          <button id="playPauseBtn">Play</button>
+          <button id="fullscreenBtn">Expand</button>
+        </div>
+      </div>
+      <div class="video-controls">
+        <button>Expand</button>
+        <button>Light: On</button>
+        <button>Auto Play: Off</button>
+        <button>Auto Skip Intro: On</button>
+      </div>
+    </div>
+</body>
+</html>

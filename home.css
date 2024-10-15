@@ -128,7 +128,8 @@ a:hover {
 }
 
 .watch-anime-btn:hover {
-  background-color: #ff6db8;
+  color: white;
+  background-color: lightpink;
 }
 /* Sidebar */
 .sidebar {

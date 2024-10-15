@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .episode-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .episode-list li {
+            margin: 10px 0;
+            cursor: pointer;
+            padding: 10px;
+            background: #eee;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .episode-list li:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Video Streaming App</h1>
+</header>
+
+<div class="container">
+    <video id="videoPlayer" controls>
+        <source src="episode1.mp4" id="videoSource" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video id="videoPlayer" controls>
+      <source src="episode1.mp4" id="videoSource" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+    <ul class="episode-list">
+        <li onclick="playEpisode('episode1.mp4')">Episode 1</li>
+        <li onclick="playEpisode('episode2.mp4')">Episode 2</li>
+        <li onclick="playEpisode('episode3.mp4')">Episode 3</li>
+    </ul>
+</div>
+
+<script>
+    function playEpisode(episode1) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoSource = document.getElementById('videoSource');
+        videoSource.src = episode;
+        videoPlayer.load();
+        videoPlayer.play();
+    }
+    function playEpisode(episode2) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoSource = document.getElementById('videoSource');
+        videoSource.src = episode;
+        videoPlayer.load();
+        videoPlayer.play();
+    }
+</script>
+
+</body>
+</html>

@@ -222,13 +222,16 @@
   background-color: #2c2c3b;
   border-radius: 10px;
   padding: 1rem;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .recommendation-card img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
+  display: flex;
 }
 
 .most-popular ul {
